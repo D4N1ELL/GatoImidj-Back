@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from models import Meme
+from api.models import Meme
 from api.routes.users import liked_memes_by_user
 from api.routes.memes import memes
 

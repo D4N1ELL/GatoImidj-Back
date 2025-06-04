@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
-from models import User, UserCreate
+from api.models import User, UserCreate
 from typing import List
-from utils import hash_password
+from api.utils import hash_password
 
 router = APIRouter(prefix="/users", tags=["users"])
 

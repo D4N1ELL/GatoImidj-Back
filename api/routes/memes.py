@@ -1,13 +1,13 @@
-from fastapi import APIRouter
+from fastapi import APIRouter,Depends
 from pydantic import BaseModel
 from typing import List
+from api.dependencies import get_current_user
 
 router = APIRouter(prefix="/memes", tags=["memes"])
 
 class MemeCreate(BaseModel):
     title: str
     url: str
-    uploaded_by: str
 
 class Meme(MemeCreate):
     id: int
@@ -25,9 +25,9 @@ async def list_memes():
     return memes_db
 
 @router.post("/", response_model=Meme)
-async def upload_meme(meme: MemeCreate):
+async def upload_meme(meme: MemeCreate, user=Depends(get_current_user)):
     global id_counter
-    new_meme = Meme(id=id_counter, **meme.dict())
+    new_meme = Meme(id=id_counter, uploaded_by=user.username, title=meme.title, url=meme.url)
     memes_db.append(new_meme.dict())
     id_counter += 1
     return new_meme
