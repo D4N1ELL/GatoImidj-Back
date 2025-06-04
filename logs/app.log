@@ -5,3 +5,14 @@
 2025-06-04 19:55:38.096 | INFO     | core.logger:configure_logger:51 - Logger configured with level INFO
 2025-06-04 19:55:38.100 | INFO     | __main__:<module>:55 - Application GatoImidj initialized
 2025-06-04 19:55:38.129 | INFO     | __main__:lifespan:25 - Starting up application
+2025-06-04 20:13:52.010 | INFO     | __main__:lifespan:28 - Shutting down application
+2025-06-04 20:18:59.566 | INFO     | core.logger:configure_logger:51 - Logger configured with level INFO
+2025-06-04 20:18:59.571 | INFO     | __main__:<module>:55 - Application GatoImidj initialized
+2025-06-04 20:18:59.598 | INFO     | __main__:lifespan:25 - Starting up application
+2025-06-04 20:28:53.778 | INFO     | core.logger:configure_logger:51 - Logger configured with level INFO
+2025-06-04 20:28:53.782 | INFO     | __main__:<module>:55 - Application GatoImidj initialized
+2025-06-04 20:28:53.810 | INFO     | __main__:lifespan:25 - Starting up application
+2025-06-04 20:36:09.740 | INFO     | __main__:lifespan:28 - Shutting down application
+2025-06-04 20:41:02.601 | INFO     | core.logger:configure_logger:51 - Logger configured with level INFO
+2025-06-04 20:41:02.605 | INFO     | __main__:<module>:55 - Application GatoImidj initialized
+2025-06-04 20:41:02.632 | INFO     | __main__:lifespan:25 - Starting up application
